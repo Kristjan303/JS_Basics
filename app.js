@@ -1,28 +1,18 @@
-let val;
+const li = document.createElement(`Li`)
 
-const list = document.querySelector(`ul`)
-const listitem = document.querySelector(`li`)
+li.className = `collection-item`
+const text = document.createTextNode(`Study element creation`)
+li.appendChild(text)
 
-val = list
-val = list.childNodes
-val = list.childNodes[0]
-val = list.childNodes[0].nodeName
-val = list.childNodes[1].nodeType
+const a = document.createElement(`a`)
+a.className = `blue-text text-darken-2 secondary content`
+const text = document.createTextNode(`x`)
+a.appendChild(text)
+a.setAttribute(`href`, `a`)
 
-val = list.children
-val = list.children[1].children
+li.appendChild(a)
 
-val = list.firstChild
-val = list.firstElementChild
+const li
+list.appendChild(li)
 
-val = list.lastElementChild
-val = list.childElementCount
-
-val = listitem.parentNode
-val = listitem.parentElement
-
-val = listitem.nextSibling
-val = listitem.nextElementSibling
-val = listitem.nextElementSibling.previousElementSibling
-
-console.log(val)
+console.log(li)
